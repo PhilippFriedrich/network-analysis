@@ -1,4 +1,4 @@
-# 06_network_assignment: Betweeness Centrality Analysis
+# Betweeness Centrality Analysis
 
 ## Introduction
 This project was done within the course "Advanced Geoscripting" at the Institute of Geography at Heidelberg University during the Winterterm of 2023/2024. 
@@ -14,8 +14,8 @@ This project aims to provide a python program to calculate betweeness centrality
 ### 1. Download repository
 
 ```
-$ git clone https://courses.gistools.geog.uni-heidelberg.de/wk279/06_network_assignment.git   
-$ cd 06_network_assignment
+$ cd network analysis
+$ git clone https://github.com/PhilippFriedrich/network-analysis.git   
 ```
 
 ### 2. Create environment
@@ -28,6 +28,8 @@ $ conda activate network-analysis
 ```
 
 ## Usage
+
+Before you use the program make sure to download the population layer [here](https://drive.google.com/drive/u/0/folders/1RZBV_UgB84E0fpzKp3nxcu54xcescaIT) and store it in the data folder!
 
 Within the created environment the program can be executed. It is designed to run from the command line. The user can specify a city or area for wich the analysis is done. This city must refere to a OSMnx geocode. The program can be executed as follows:
 
@@ -53,7 +55,7 @@ For more insights check this [Jupyter Notebook](src/betweenness_centrality.ipynb
 ## Example
 
 ```
-$ cd 06_network_assignment/src  
+$ cd network-analysis/src  
 $ python main.py Heidelberg geographicalPop length 100
 ```
 This example calculates the geographically adapted betweenness centrality with start and endpoints for routes based on population density for the city of Heidelberg, Germany. It generates 100 routes for calculation and uses the shortest routes.
